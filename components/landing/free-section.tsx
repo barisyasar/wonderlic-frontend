@@ -36,7 +36,7 @@ export default function FreeSection() {
         </div>
         <div className="free-list rounded-[10px] border border-white/15 bg-white/[0.06] p-5 sm:p-7">
           <div className="mb-5 flex items-center gap-3 border-b border-white/10 pb-5">
-            <span className="flex size-10 items-center justify-center rounded-[9px] bg-[#121824] text-white">
+            <span className="flex size-10 items-center justify-center rounded-[9px] bg-[#155EEF] text-white">
               <Sparkles aria-hidden="true" className="size-[18px]" />
             </span>
             <div>

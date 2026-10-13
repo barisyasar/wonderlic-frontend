@@ -140,7 +140,7 @@ export default function HeroSection() {
             >
               How It Works
             </Button>
-            <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
+            <div className="gap-3 flex flex-wrap">
               <Button
                 className="h-12 justify-center gap-2 rounded-lg border-2 border-[#0B1F44] bg-[#0B1F44] px-5 text-[14px] font-semibold text-white shadow-[0_8px_22px_-14px_#0b1f44cc] hover:bg-[#142d5c] sm:flex-1 sm:justify-center lg:flex-none"
                 nativeButton={false}
