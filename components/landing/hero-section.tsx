@@ -1,7 +1,7 @@
-import { ArrowDown, Check, GraduationCap, Sparkles, Timer } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { Check, GraduationCap, Sparkles, Timer } from "lucide-react";
 
 function AssessmentPreview() {
   return (
@@ -131,22 +131,31 @@ export default function HeroSection() {
             quizzes designed to help you challenge yourself and build
             confidence.
           </p>
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
+          <div className="mt-8 flex flex-col gap-3">
             <Button
-              className="h-12 justify-center rounded-lg border-[#d9e2ee] bg-white px-5 text-[14px] font-semibold text-[#213651] hover:border-[#b9c8dc] hover:bg-[#f8faff]"
+              className="h-12 self-start rounded-lg border-[#d9e2ee] bg-white px-5 text-[14px] font-semibold text-[#213651] hover:border-[#b9c8dc] hover:bg-[#f8faff]"
               nativeButton={false}
               render={<a href="#how-it-works" />}
               variant="outline"
             >
               How It Works
             </Button>
-            <Button
-              className="h-12 justify-center rounded-lg bg-[#155EEF] px-5 text-[14px] font-semibold text-white shadow-[0_7px_18px_-8px_#155eefbd] hover:bg-[#0e4ed4]"
-              nativeButton={false}
-              render={<a href="#quizzes" />}
-            >
-              Explore Free Quizzes <ArrowDown aria-hidden="true" />
-            </Button>
+            <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
+              <Button
+                className="h-12 justify-center gap-2 rounded-lg border-2 border-[#0B1F44] bg-[#0B1F44] px-5 text-[14px] font-semibold text-white shadow-[0_8px_22px_-14px_#0b1f44cc] hover:bg-[#142d5c] sm:flex-1 sm:justify-center lg:flex-none"
+                nativeButton={false}
+                render={<a href="#demo" />}
+              >
+                Try the demo
+              </Button>
+              <Button
+                className="h-12 justify-center gap-2 rounded-lg border-2 border-[#155EEF] bg-[#155EEF] px-5 text-[14px] font-semibold text-white shadow-[0_7px_18px_-8px_#155eefbd] hover:bg-[#0e4ed4] hover:border-[#0e4ed4] sm:flex-1 sm:justify-center lg:flex-none"
+                nativeButton={false}
+                render={<a href="#quizzes" />}
+              >
+                Explore Free Quizzes
+              </Button>
+            </div>
           </div>
           <p className="mt-5 inline-flex items-center gap-2 text-[13px] font-medium text-[#687791] sm:hidden">
             <span className="size-1.5 rounded-full bg-[#2da56d]" /> Free
