@@ -80,8 +80,8 @@ export const steps = [
 ];
 
 export const freeBenefits = [
-    "Free practice quizzes",
-    "No payment required to try demos",
-    "Practice at your own pace",
-    "Instant feedback in demo experiences, where provided",
+    "Same format as the full quiz, fewer questions",
+    "No payment required to try a demo version",
+    "Work through it at your own pace",
+    "Instant feedback where the demo provides it",
 ];
