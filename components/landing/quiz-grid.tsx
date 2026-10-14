@@ -1,3 +1,5 @@
+"use client";
+
 import { ArrowUpRight, ClipboardList, Timer } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -69,9 +71,10 @@ function QuizCard({ quiz }: { quiz: Quiz }) {
         </div>
         <Button
           className="h-10 w-full justify-between rounded-lg border-[#dce5f1] bg-white px-3.5 text-[13px] font-semibold text-[#155EEF] group-hover:border-[#155EEF] group-hover:bg-[#f6f9ff]"
-          nativeButton={false}
-          render={<a href="#demo-note" />}
           variant="outline"
+          onClick={() => {
+            window.location.href = "/quizzes/demo";
+          }}
         >
           Start Quiz <ArrowUpRight aria-hidden="true" />
         </Button>

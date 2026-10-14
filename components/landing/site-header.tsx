@@ -1,13 +1,14 @@
 import { Brain } from "lucide-react";
+import Link from "next/link";
 
 export default function SiteHeader() {
   return (
     <header className="border-b border-[#e7edf5]">
       <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-x-6 gap-y-3 px-5 py-4 sm:px-8 lg:flex-nowrap lg:px-10">
-        <a
+        <Link
           aria-label="Wonderlic home"
           className="inline-flex items-center gap-2.5"
-          href="#top"
+          href="/"
         >
           <span className="flex size-9 items-center justify-center rounded-[10px] bg-[#155EEF] text-white shadow-[0_5px_14px_#155eef35]">
             <Brain aria-hidden="true" className="size-5" strokeWidth={2.1} />
@@ -15,7 +16,7 @@ export default function SiteHeader() {
           <span className="text-[19px] font-bold tracking-[-0.035em] text-[#0B1F44]">
             wonderlic
           </span>
-        </a>
+        </Link>
 
         <nav
           aria-label="Main navigation"

@@ -1,0 +1,199 @@
+[
+  {
+    "id": 1,
+    "title": "Demo",
+    "duration": 300,
+    "questions": [
+      {
+        "question": {
+          "description": "A total of **96 hours** was spent training **8 new employees**.  \n\nAt this rate, it would take how many hours to train an additional **6 new employees**?",
+          "explanation": "Since **96 hours** were spent training **8 employees**, we first find the training time per employee: \n\n**96 ÷ 8 = 12 hours** per employee.  \n\nNow we calculate for 6 employee:\n\n**6 × 12 = 72 hours**"
+        },
+        "answers": [
+          {
+            "value": "60",
+            "isCorrect": false
+          },
+          {
+            "value": "72",
+            "isCorrect": true
+          },
+          {
+            "value": "84",
+            "isCorrect": false
+          },
+          {
+            "value": "96",
+            "isCorrect": false
+          },
+          {
+            "value": "108",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": {
+          "type": 1,
+          "description": "Which **THREE** of the following words have **similar** meanings?",
+          "explanation": "The correct answers are Gather, Collect, and Accumulate. All three words mean to bring things together or increase the amount of something over time. In contrast, Scatter and Disperse mean to spread things out or move them apart, which is the opposite idea."
+        },
+        "answers": [
+          {
+            "value": "Gather",
+            "isCorrect": true
+          },
+          {
+            "value": "Scatter",
+            "isCorrect": false
+          },
+          {
+            "value": "Collect",
+            "isCorrect": true
+          },
+          {
+            "value": "Accumulate",
+            "isCorrect": true
+          },
+          {
+            "value": "Disperse",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": {
+          "type": 0,
+          "description": "The words \"COMPLETE\" and \"COMPLICATE\" have ______ meanings.",
+          "explanation": "Complete means \"finished or whole,\" while complicate means \"to make something more difficult or complex.\" Their meanings are not related."
+        },
+        "answers": [
+          {
+            "value": "Unrelated",
+            "isCorrect": true
+          },
+          {
+            "value": "Similar",
+            "isCorrect": false
+          },
+          {
+            "value": "Contradictory",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": {
+          "type": 0,
+          "description": "Which of the following is the earliest date?",
+          "explanation": "Complete means \"finished or whole,\" while complicate means \"to make something more difficult or complex.\" Their meanings are not related."
+        },
+        "answers": [
+          {
+            "value": "Mar. 18, 2152",
+            "isCorrect": false
+          },
+          {
+            "value": "Jan. 25, 2153",
+            "isCorrect": false
+          },
+          {
+            "value": "Dec. 30, 2151",
+            "isCorrect": false
+          },
+          {
+            "value": "Feb. 14, 2152",
+            "isCorrect": false
+          },
+          {
+            "value": "Jul. 9, 2151",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "question": {
+          "type": 0,
+          "description": "Rearrange all of the words down below to make the best sentence. Is the sentence true or false?  \n\n*largest Africa desert Sahara the in is*",
+          "explanation": "*The Sahara is the largest desert in Africa*  \n\nThis sentence is true."
+        },
+        "answers": [
+          {
+            "value": "True",
+            "isCorrect": true
+          },
+          {
+            "value": "False",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": {
+          "type": 0,
+          "description": "How many of the five pairs below are exact duplicates?\n\n6721      |      6721  \n450045    |      450045  \n88997     |      88979  \n123123    |      123123  \n7008007   |      7008070",
+          "explanation": "**3** pairs are exact duplicates.\n- 6721 = 6721 ✅\n- 450045 = 450045 ✅\n- 88997 ≠ 88979 ❌\n- 123123 = 123123 ✅\n- 7008007 ≠ 7008070 ❌"
+        },
+        "answers": [
+          {
+            "value": "0",
+            "isCorrect": false
+          },
+          {
+            "value": "1",
+            "isCorrect": false
+          },
+          {
+            "value": "2",
+            "isCorrect": false
+          },
+          {
+            "value": "3",
+            "isCorrect": true
+          },
+          {
+            "value": "4",
+            "isCorrect": false
+          },
+          {
+            "value": "5",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": {
+          "type": 0,
+          "description": "A clock lost 3 minutes and 15 seconds in 65 days.\n\nHow many seconds did it lose per day?",
+          "explanation": "Step 1: Convert the total time lost into seconds.\n\n3 minutes 15 seconds = (3 × 60) + 15 = 195 seconds\n\nStep 2: Divide the total seconds lost by the number of days.\n\n195 ÷ 65 = 3\n\nStep 3: Write the answer.\n\nThe clock lost **3 seconds per day**."
+        },
+        "answers": [
+          {
+            "value": "0",
+            "isCorrect": false
+          },
+          {
+            "value": "1",
+            "isCorrect": false
+          },
+          {
+            "value": "2",
+            "isCorrect": false
+          },
+          {
+            "value": "3",
+            "isCorrect": true
+          },
+          {
+            "value": "4",
+            "isCorrect": false
+          },
+          {
+            "value": "5",
+            "isCorrect": false
+          }
+        ]
+      }
+    ]
+  }
+]
