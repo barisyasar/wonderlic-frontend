@@ -2,8 +2,14 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Check, Sparkles } from "lucide-react";
 import { freeBenefits } from "./data";
+import { fetchQuizList, slugify } from "@/lib/quiz-api";
 
-export default function FreeSection() {
+export default async function FreeSection() {
+  const [demoQuiz] = await fetchQuizList();
+  const demoHref = demoQuiz
+    ? `/quizzes/${slugify(String(demoQuiz.quizId))}`
+    : "#quizzes";
+
   return (
     <section
       aria-labelledby="free-heading"
@@ -29,7 +35,7 @@ export default function FreeSection() {
           <Button
             className="mt-7 h-11 rounded-lg bg-white px-4 font-semibold text-[#0B1F44] hover:bg-[#eaf2ff]"
             nativeButton={false}
-            render={<a href="#quizzes" />}
+            render={<a href={demoHref} />}
           >
             Try the demo <ArrowRight aria-hidden="true" />
           </Button>

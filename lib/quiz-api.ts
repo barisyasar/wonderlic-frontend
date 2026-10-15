@@ -149,7 +149,6 @@ function normalizeQuizList(payload: unknown): QuizRecord[] {
 async function fetchJson(url: string) {
   const response = await fetch(url, {
     headers: { Accept: "application/json" },
-    next: { revalidate: 60 },
   });
 
   if (!response.ok) {
