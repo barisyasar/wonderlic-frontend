@@ -30,7 +30,7 @@ function QuizCard({ quiz }: { quiz: QuizRecord }) {
             <Timer aria-hidden="true" className="size-3.5" /> {formatDuration(quiz.duration)}
           </span>
           <span className="inline-flex items-center gap-1.5">
-            <ClipboardList aria-hidden="true" className="size-3.5" /> {quiz.questions.length} questions
+            <ClipboardList aria-hidden="true" className="size-3.5" /> {quiz.questionLength} questions
           </span>
         </div>
         <Link

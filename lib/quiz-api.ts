@@ -18,6 +18,7 @@ export type QuizRecord = {
   quizId: string;
   title: string;
   duration: number;
+  questionLength: number;
   questions: QuizQuestion[];
 };
 
@@ -107,16 +108,22 @@ function normalizeQuiz(rawQuiz: unknown): QuizRecord | null {
 
   if (!title) return null;
 
+  const rawQuestionCount = Array.isArray(quiz.questions) ? quiz.questions.length : 0;
   const questions = Array.isArray(quiz.questions)
     ? quiz.questions.map(normalizeQuestion).filter(Boolean) as QuizQuestion[]
     : [];
 
   const maybeId = quiz.quizId ?? quiz.id ?? quiz.slug ?? title;
+  const questionLength = asNumber(
+    quiz.questionLength ?? quiz.question_count ?? rawQuestionCount,
+    rawQuestionCount,
+  );
 
   return {
     quizId: String(maybeId),
     title,
     duration: asNumber(quiz.duration ?? quiz.durationSeconds ?? quiz.timeLimit ?? 0, 0),
+    questionLength: Number.isFinite(questionLength) ? Math.max(0, questionLength) : rawQuestionCount,
     questions,
   };
 }
@@ -157,7 +164,7 @@ export async function fetchQuizList(): Promise<QuizRecord[]> {
 
   try {
     const payload = await fetchJson(`${apiBaseUrl}/api/quizzes`);
-    const quizzes = normalizeQuizList(payload);
+    const quizzes = normalizeQuizList(payload).sort((a, b) => a.questionLength - b.questionLength);
 
     if (quizzes.length > 0) {
       return quizzes;
@@ -166,7 +173,7 @@ export async function fetchQuizList(): Promise<QuizRecord[]> {
     // Fall back to the local seed data if the backend is unavailable.
   }
 
-  return normalizeQuizList(seedData as unknown[]);
+  return normalizeQuizList(seedData as unknown[]).sort((a, b) => a.questionLength - b.questionLength);
 }
 
 export async function fetchQuizBySlug(slug: string): Promise<QuizRecord | null> {
