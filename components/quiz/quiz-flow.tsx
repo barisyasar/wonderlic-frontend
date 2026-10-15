@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useRouter } from "next/navigation";
+import { useEffect, useMemo, useState, type KeyboardEvent } from "react";
 import {
   ArrowLeft,
   ArrowRight,
@@ -61,7 +62,7 @@ function QuizIntro({
   return (
     <>
       <SiteHeader />
-      <main className="mx-auto flex w-full max-w-5xl items-center justify-center py-12">
+      <main className="mx-auto flex w-full max-w-5xl items-center justify-center py-12 px-5">
         <div className="w-full overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-[0_25px_60px_-28px_rgba(15,23,42,0.28)]">
           <div className="border-b border-slate-200 bg-gradient-to-r from-[#eff6ff] via-white to-[#f8fbff] p-6 sm:p-8">
             <div className="flex flex-wrap items-center justify-between gap-3">
@@ -126,12 +127,22 @@ function QuestionOption({
   checked: boolean;
   onSelect: () => void;
 }) {
+  const handleKeyDown = (event: KeyboardEvent<HTMLDivElement>) => {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      onSelect();
+    }
+  };
+
   return (
-    <button
-      type="button"
+    <div
+      role="button"
+      tabIndex={0}
+      aria-pressed={checked}
       onClick={onSelect}
+      onKeyDown={handleKeyDown}
       className={[
-        "flex w-full items-center gap-3 rounded-2xl border px-4 py-3 text-left transition-all duration-200",
+        "flex w-full cursor-pointer items-center gap-3 rounded-2xl border px-4 py-3 text-left transition-all duration-200",
         checked
           ? "border-blue-500 bg-blue-50 text-blue-900 shadow-sm ring-2 ring-blue-100"
           : "border-slate-200 bg-white text-slate-700 hover:border-blue-200 hover:bg-slate-50",
@@ -139,16 +150,16 @@ function QuestionOption({
     >
       <Checkbox checked={checked} className={checked ? "border-blue-600 bg-blue-600 text-white" : ""} />
       <span className="flex-1 text-sm font-medium sm:text-[15px]">{answer}</span>
-    </button>
+    </div>
   );
 }
 
 export default function QuizFlow({ quiz }: { quiz: QuizRecord }) {
+  const router = useRouter();
   const [step, setStep] = useState<Step>("ready");
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedAnswers, setSelectedAnswers] = useState<Record<number, string[]>>({});
   const [timerLeft, setTimerLeft] = useState(quiz.duration);
-
 
   const currentEntry = quiz.questions[currentIndex] ?? quiz.questions[0];
   const currentQuestion = currentEntry;
@@ -174,10 +185,10 @@ export default function QuizFlow({ quiz }: { quiz: QuizRecord }) {
   useEffect(() => {
     if (step !== "quiz") return;
 
-    const interval = window.setInterval(() => {
+    const interval = setInterval(() => {
       setTimerLeft((previous) => {
         if (previous <= 1) {
-          window.clearInterval(interval);
+          clearInterval(interval);
           setStep("result");
           return 0;
         }
@@ -186,7 +197,7 @@ export default function QuizFlow({ quiz }: { quiz: QuizRecord }) {
       });
     }, 1000);
 
-    return () => window.clearInterval(interval);
+    return () => clearInterval(interval);
   }, [step]);
 
   const handleOptionToggle = (value: string) => {
@@ -238,6 +249,10 @@ export default function QuizFlow({ quiz }: { quiz: QuizRecord }) {
     setTimerLeft(quiz.duration);
   };
 
+  const handleQuitQuiz = () => {
+    router.push("/");
+  };
+
   if (step === "ready") {
     return (
       <QuizIntro
@@ -265,9 +280,20 @@ export default function QuizFlow({ quiz }: { quiz: QuizRecord }) {
                     {currentIndex + 1} / {totalQuestions}
                   </span>
                 </div>
-                <div className="flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-1.5 shadow-sm">
-                  <Clock3 className="size-4 text-blue-600" />
-                  <span className="font-medium text-slate-700">{formatDuration(timerLeft)}</span>
+                <div className="flex items-center gap-2">
+                  <Button
+                    type="button"
+                    variant="outline"
+                    className="h-9 rounded-xl border-slate-200 bg-white px-3 text-xs font-medium text-slate-700"
+                    onClick={handleQuitQuiz}
+                  >
+                    <XCircle className="mr-1.5 size-3.5" />
+                    Quit quiz
+                  </Button>
+                  <div className="flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-1.5 shadow-sm">
+                    <Clock3 className="size-4 text-blue-600" />
+                    <span className="font-medium text-slate-700">{formatDuration(timerLeft)}</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -301,7 +327,7 @@ export default function QuizFlow({ quiz }: { quiz: QuizRecord }) {
               ))}
             </div>
 
-            <div className="mt-8 flex items-center justify-between gap-4 border-t border-slate-200 pt-5">
+            <div className="mt-8 flex items-center justify-between gap-4 border-t border-slate-200 pt-5 flex-wrap">
               <Button
                 type="button"
                 variant="outline"

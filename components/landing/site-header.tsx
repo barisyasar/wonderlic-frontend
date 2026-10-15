@@ -22,18 +22,18 @@ export default function SiteHeader() {
           aria-label="Main navigation"
           className="order-3 flex w-full items-center gap-6 text-[13px] font-medium text-[#52627a] lg:order-2 lg:w-auto"
         >
-          <a
+          <Link
             className="transition-colors hover:text-[#155EEF]"
-            href="#how-it-works"
+            href="/#how-it-works"
           >
             How it works
-          </a>
-          <a className="transition-colors hover:text-[#155EEF]" href="#quizzes">
+          </Link>
+          <Link className="transition-colors hover:text-[#155EEF]" href="/#quizzes">
             Free quizzes
-          </a>
-          <a className="transition-colors hover:text-[#155EEF]" href="#faq">
+          </Link>
+          <Link className="transition-colors hover:text-[#155EEF]" href="/#faq">
             FAQ
-          </a>
+          </Link>
         </nav>
       </div>
     </header>

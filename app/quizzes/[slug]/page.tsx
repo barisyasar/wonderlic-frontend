@@ -32,7 +32,7 @@ function slugify(value: string) {
 }
 
 export function generateStaticParams() {
-  return quizzes.map((quiz) => ({ slug: slugify(quiz.title) }));
+  return quizzes.map((quiz) => ({ slug: slugify(quiz.id+'') }));
 }
 
 export default async function QuizPage({
