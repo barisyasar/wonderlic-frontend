@@ -31,7 +31,7 @@ type QuizQuestion = {
 };
 
 type QuizRecord = {
-  id: number;
+  quizId: string;
   title: string;
   duration: number;
   questions: QuizQuestion[];
@@ -424,7 +424,7 @@ export default function QuizFlow({ quiz }: { quiz: QuizRecord }) {
 
               return (
                 <div
-                  key={`${quiz.id}-review-${index}`}
+                  key={`${quiz.quizId}-review-${index}`}
                   className={[
                     "rounded-2xl border p-4",
                     isCorrect ? "border-green-200 bg-green-50" : "border-red-200 bg-red-50",

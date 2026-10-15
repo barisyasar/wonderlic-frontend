@@ -1,38 +1,14 @@
 import { notFound } from "next/navigation";
 import QuizFlow from "@/components/quiz/quiz-flow";
-import seedData from "@/seed.json";
+import { fetchQuizBySlug, fetchQuizList, slugify } from "@/lib/quiz-api";
 
-type SeedQuestion = {
-  question: {
-    type?: number;
-    description: string;
-    explanation: string;
-  };
-  answers: Array<{
-    value: string;
-    isCorrect: boolean;
-  }>;
-};
+export const revalidate = false;
+export const dynamicParams = false;
 
-type SeedQuiz = {
-  id: number;
-  title: string;
-  duration: number;
-  questions: SeedQuestion[];
-};
+export async function generateStaticParams() {
+  const quizzes = await fetchQuizList();
 
-const quizzes = seedData as SeedQuiz[];
-
-function slugify(value: string) {
-  return value
-    .toLowerCase()
-    .trim()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "");
-}
-
-export function generateStaticParams() {
-  return quizzes.map((quiz) => ({ slug: slugify(quiz.id+'') }));
+  return quizzes.map((quiz) => ({ slug: slugify(String(quiz.quizId)) }));
 }
 
 export default async function QuizPage({
@@ -41,11 +17,7 @@ export default async function QuizPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const normalizedSlug = slug.trim().toLowerCase();
-  const quiz = quizzes.find(
-    (item) =>
-      slugify(item.title) === normalizedSlug || String(item.id) === normalizedSlug,
-  );
+  const quiz = await fetchQuizBySlug(slug);
 
   if (!quiz) {
     notFound();
