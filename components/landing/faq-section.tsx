@@ -9,34 +9,29 @@ import {
 
 const questions = [
   {
-    question: "Are the quizzes really free?",
+    question: "Are these Wonderlic practice quizzes free?",
     answer:
-      "Yes. The practice quiz previews on this page are free to explore, and no payment is required to try a demo. The quiz destinations are placeholders in this landing-page phase.",
+      "Yes. You can start any quiz listed here for free, with no payment required.",
   },
   {
     question: "How long does a quiz take?",
     answer:
-      "The durations and question counts shown on the quiz cards are illustrative only. Active timed quiz experiences are not included in this preview.",
+      "Each quiz has its own time limit and question count, shown before you begin. Work through the questions before the timer runs out; your results appear when you finish or time expires.",
   },
   {
-    question: "What skills do these quizzes practice?",
+    question: "What kinds of questions will I see?",
     answer:
-      "The sample categories cover numerical, verbal, logical, and abstract reasoning: working with information, recognizing patterns, and drawing conclusions.",
+      "Practice questions cover numerical and verbal reasoning, logic, and visual patterns. The exact mix depends on the quiz you choose.",
   },
   {
     question: "Do I need to create an account?",
     answer:
-      "No account is needed to browse this page. There is no sign-up flow in this landing-page preview.",
+      "No. Choose a quiz and start practicing right away. No account or sign-up is required.",
   },
   {
-    question: "Are these official Wonderlic tests?",
+    question: "How are my results calculated?",
     answer:
-      "No. These are independent practice concepts inspired by general aptitude-test formats, not official Wonderlic assessments.",
-  },
-  {
-    question: "Will I receive my results immediately?",
-    answer:
-      "This page does not run quizzes or generate results. Immediate feedbPack is only available in a demo experience where it has been implemented.",
+      "Your results show how many questions you answered correctly, your accuracy, and the time you spent. You can also review each question, its correct answer, and an explanation.",
   },
 ];
 
@@ -45,13 +40,12 @@ export default function FAQSection() {
     <section className="bg-white py-20 sm:py-24" id="faq">
       <div className="mx-auto grid max-w-7xl gap-10 px-5 sm:px-8 lg:grid-cols-[0.78fr_1.22fr] lg:gap-20 lg:px-10">
         <div>
-          <p className="section-kicker">A few helpful details</p>
+          <p className="section-kicker">Helpful information</p>
           <h2 className="mt-3 max-w-sm text-3xl font-bold leading-tight tracking-[-0.035em] text-[#0B1F44] sm:text-[38px]">
-            Questions, answered.
+            Frequently asked questions
           </h2>
           <p className="mt-4 max-w-sm text-[15px] leading-7 text-[#65758c]">
-            A little more context about the practice previews and what is
-            available here.
+            Everything you need to know about our practice quizzes.
           </p>
         </div>
         <Accordion className="divide-y divide-[#e7edf5] border-y border-[#e7edf5]">

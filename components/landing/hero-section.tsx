@@ -140,16 +140,16 @@ export default function HeroSection() {
             >
               How It Works
             </Button>
-            <div className="gap-3 flex flex-wrap">
+            <div className="flex flex-col items-start gap-3 sm:flex-row sm:justify-start">
               <Button
-                className="h-12 justify-center gap-2 rounded-lg border-2 border-[#0B1F44] bg-[#0B1F44] px-5 text-[14px] font-semibold text-white shadow-[0_8px_22px_-14px_#0b1f44cc] hover:bg-[#142d5c] sm:flex-1 sm:justify-center lg:flex-none"
+                className="h-12 justify-center gap-2 rounded-lg border-2 border-[#0B1F44] bg-[#0B1F44] px-5 text-[14px] font-semibold text-white shadow-[0_8px_22px_-14px_#0b1f44cc] hover:bg-[#142d5c]"
                 nativeButton={false}
                 render={<a href="#demo" />}
               >
                 Try the demo
               </Button>
               <Button
-                className="h-12 justify-center gap-2 rounded-lg border-2 border-[#155EEF] bg-[#155EEF] px-5 text-[14px] font-semibold text-white shadow-[0_7px_18px_-8px_#155eefbd] hover:bg-[#0e4ed4] hover:border-[#0e4ed4] sm:flex-1 sm:justify-center lg:flex-none"
+                className="h-12 justify-center gap-2 rounded-lg border-2 border-[#155EEF] bg-[#155EEF] px-5 text-[14px] font-semibold text-white shadow-[0_7px_18px_-8px_#155eefbd] hover:bg-[#0e4ed4] hover:border-[#0e4ed4]"
                 nativeButton={false}
                 render={<a href="#quizzes" />}
               >
