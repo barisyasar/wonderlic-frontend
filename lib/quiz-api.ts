@@ -24,10 +24,7 @@ export type QuizRecord = {
 
 function getApiBaseUrl() {
   return (
-    process.env.NEXT_PUBLIC_WONDERLIC_API_URL ??
     process.env.NEXT_PUBLIC_API_URL ??
-    process.env.NEXT_PUBLIC_BACKEND_URL ??
-    process.env.WONDERLIC_BACKEND_URL ??
     DEFAULT_API_BASE_URL
   ).replace(/\/$/, "");
 }

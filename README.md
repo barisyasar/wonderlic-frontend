@@ -20,6 +20,20 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Google Analytics
+
+Create a GA4 property and web data stream, then set its measurement ID (usually `G-...`) as
+`NEXT_PUBLIC_GA_ID` in the deployment environment. For local testing, add it to `.env.local`:
+
+```env
+NEXT_PUBLIC_GA_ID=G-XXXXXXXXXX
+```
+
+Analytics is only loaded when this variable is set. The Next.js Google Analytics integration tracks
+page views on client-side route changes; check that “Page changes based on browser history events”
+is enabled under the GA4 property's Enhanced Measurement settings. Review applicable privacy and
+cookie-consent requirements before enabling analytics for visitors.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
