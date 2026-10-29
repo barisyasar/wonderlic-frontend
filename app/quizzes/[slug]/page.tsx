@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import QuizFlow from "@/components/quiz/quiz-flow";
 import { fetchQuizBySlug, fetchQuizList, slugify } from "@/lib/quiz-api";
+import { siteUrl } from "@/lib/seo";
 
 export const revalidate = false;
-export const dynamicParams = false;
 
 export async function generateStaticParams() {
   const quizzes = await fetchQuizList();
@@ -31,6 +31,9 @@ export async function generateMetadata({
   return {
     title,
     description,
+    alternates: {
+      canonical: new URL(`/quizzes/${slug}`, siteUrl).toString(),
+    },
     openGraph: {
       type: "website",
       title,

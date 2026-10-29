@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { Geist, Geist_Mono } from "next/font/google";
+import { siteUrl } from "@/lib/seo";
 import "./global.css";
 
 const googleAnalyticsId = process.env.NEXT_PUBLIC_GA_ID;
@@ -16,6 +17,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: siteUrl,
   title: "Wonderlic | Free Aptitude Practice",
   description:
     "Practice numerical, verbal, logical, and abstract reasoning with free aptitude quiz previews from Wonderlic.",
