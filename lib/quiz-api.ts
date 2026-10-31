@@ -23,10 +23,10 @@ export type QuizRecord = {
 };
 
 function getApiBaseUrl() {
-  return (
-    process.env.NEXT_PUBLIC_API_URL ??
-    DEFAULT_API_BASE_URL
-  ).replace(/\/$/, "");
+  return (process.env.NEXT_PUBLIC_API_URL ?? DEFAULT_API_BASE_URL).replace(
+    /\/$/,
+    "",
+  );
 }
 
 export function slugify(value: string) {
@@ -60,10 +60,10 @@ function normalizeAnswers(rawAnswers: unknown): QuizQuestion["answers"] {
       ).trim();
       const isCorrect = Boolean(
         candidate.isCorrect ??
-          candidate.correct ??
-          candidate.is_correct ??
-          candidate.correctAnswer ??
-          candidate.isCorrectAnswer,
+        candidate.correct ??
+        candidate.is_correct ??
+        candidate.correctAnswer ??
+        candidate.isCorrectAnswer,
       );
 
       if (!value) return null;
@@ -78,13 +78,24 @@ function normalizeQuestion(rawQuestion: unknown): QuizQuestion | null {
 
   const question = rawQuestion as Record<string, unknown>;
   const description = String(
-    question.description ?? question.text ?? question.prompt ?? question.question ?? "",
+    question.description ??
+      question.text ??
+      question.prompt ??
+      question.question ??
+      "",
   ).trim();
 
   if (!description) return null;
 
-  const explanation = String(question.explanation ?? question.solution ?? question.answerExplanation ?? "").trim();
-  const answers = normalizeAnswers(question.answers ?? question.options ?? question.choices ?? []);
+  const explanation = String(
+    question.explanation ??
+      question.solution ??
+      question.answerExplanation ??
+      "",
+  ).trim();
+  const answers = normalizeAnswers(
+    question.answers ?? question.options ?? question.choices ?? [],
+  );
   const typeValue = question.questionType ?? question.type;
 
   return {
@@ -105,9 +116,11 @@ function normalizeQuiz(rawQuiz: unknown): QuizRecord | null {
 
   if (!title) return null;
 
-  const rawQuestionCount = Array.isArray(quiz.questions) ? quiz.questions.length : 0;
+  const rawQuestionCount = Array.isArray(quiz.questions)
+    ? quiz.questions.length
+    : 0;
   const questions = Array.isArray(quiz.questions)
-    ? quiz.questions.map(normalizeQuestion).filter(Boolean) as QuizQuestion[]
+    ? (quiz.questions.map(normalizeQuestion).filter(Boolean) as QuizQuestion[])
     : [];
 
   const maybeId = quiz.quizId ?? quiz.id ?? quiz.slug ?? title;
@@ -119,8 +132,13 @@ function normalizeQuiz(rawQuiz: unknown): QuizRecord | null {
   return {
     quizId: String(maybeId),
     title,
-    duration: asNumber(quiz.duration ?? quiz.durationSeconds ?? quiz.timeLimit ?? 0, 0),
-    questionLength: Number.isFinite(questionLength) ? Math.max(0, questionLength) : rawQuestionCount,
+    duration: asNumber(
+      quiz.duration ?? quiz.durationSeconds ?? quiz.timeLimit ?? 0,
+      0,
+    ),
+    questionLength: Number.isFinite(questionLength)
+      ? Math.max(0, questionLength)
+      : rawQuestionCount,
     questions,
   };
 }
@@ -158,10 +176,11 @@ async function fetchJson(url: string) {
 
 export async function fetchQuizList(): Promise<QuizRecord[]> {
   const apiBaseUrl = getApiBaseUrl();
-
   try {
     const payload = await fetchJson(`${apiBaseUrl}/api/quizzes`);
-    const quizzes = normalizeQuizList(payload).sort((a, b) => a.questionLength - b.questionLength);
+    const quizzes = normalizeQuizList(payload).sort(
+      (a, b) => a.questionLength - b.questionLength,
+    );
 
     if (quizzes.length > 0) {
       return quizzes;
@@ -170,16 +189,22 @@ export async function fetchQuizList(): Promise<QuizRecord[]> {
     // Fall back to the local seed data if the backend is unavailable.
   }
 
-  return normalizeQuizList(seedData as unknown[]).sort((a, b) => a.questionLength - b.questionLength);
+  return normalizeQuizList(seedData as unknown[]).sort(
+    (a, b) => a.questionLength - b.questionLength,
+  );
 }
 
-export async function fetchQuizBySlug(slug: string): Promise<QuizRecord | null> {
+export async function fetchQuizBySlug(
+  slug: string,
+): Promise<QuizRecord | null> {
   const cleanSlug = slug.trim();
   const apiBaseUrl = getApiBaseUrl();
 
   if (cleanSlug) {
     try {
-      const payload = await fetchJson(`${apiBaseUrl}/api/quizzes/${encodeURIComponent(cleanSlug)}`);
+      const payload = await fetchJson(
+        `${apiBaseUrl}/api/quizzes/${encodeURIComponent(cleanSlug)}`,
+      );
       const quiz = normalizeQuiz(payload);
       if (quiz) {
         return quiz;

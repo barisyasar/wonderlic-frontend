@@ -13,7 +13,10 @@ function QuizCard({ quiz }: { quiz: QuizRecord }) {
   return (
     <Card className="quiz-card group rounded-[9px] border-[#e2e9f2] bg-white py-0 shadow-[0_3px_10px_-8px_#0b1f4470] transition duration-200 hover:-translate-y-0.5 hover:border-[#c7d7f2] hover:shadow-[0_12px_30px_-18px_#0b1f4460]">
       <div className="relative h-[136px] overflow-hidden border-b border-[#edf1f6] bg-[#f8faff]">
-        <div aria-hidden="true" className="flex h-full items-center justify-center text-3xl font-black tracking-[0.3em] text-[#cbd5e1]">
+        <div
+          aria-hidden="true"
+          className="flex h-full items-center justify-center text-3xl font-black tracking-[0.3em] text-[#cbd5e1]"
+        >
           {quiz.title.slice(0, 2).toUpperCase()}
         </div>
       </div>
@@ -27,10 +30,12 @@ function QuizCard({ quiz }: { quiz: QuizRecord }) {
       <CardContent className="px-5 pb-5">
         <div className="flex items-center gap-4 border-t border-[#edf1f6] py-3 text-xs font-medium text-[#77859a]">
           <span className="inline-flex items-center gap-1.5">
-            <Timer aria-hidden="true" className="size-3.5" /> {formatDuration(quiz.duration)}
+            <Timer aria-hidden="true" className="size-3.5" />{" "}
+            {formatDuration(quiz.duration)}
           </span>
           <span className="inline-flex items-center gap-1.5">
-            <ClipboardList aria-hidden="true" className="size-3.5" /> {quiz.questionLength} questions
+            <ClipboardList aria-hidden="true" className="size-3.5" />{" "}
+            {quiz.questionLength} questions
           </span>
         </div>
         <Link
@@ -66,9 +71,9 @@ export default async function QuizGrid() {
         </div>
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {quizzes.length > 0 ? (
-            quizzes.map((quiz) => (
-              <QuizCard key={String(quiz.quizId)} quiz={quiz} />
-            ))
+            quizzes
+              .slice(1)
+              .map((quiz) => <QuizCard key={String(quiz.quizId)} quiz={quiz} />)
           ) : (
             <div className="col-span-full rounded-xl border border-dashed border-slate-200 bg-white p-8 text-center text-sm text-slate-500">
               Loading quizzes from the backend…
