@@ -1,0 +1,321 @@
+{
+    "quizId": "f4362406-7cc1-4da5-b16c-68bacfc8d45f",
+    "title": "Demo Quiz (5 mins - 12 Questions)",
+    "durationMinutes": 5,
+    "questions": [
+        {
+            "question": {
+                "description": "A total of 96 hours was spent training 8 new employees. \n\nAt this rate, it would take how many hours to train an additional 6 new employees?",
+                "explanation": "Since 96 hours were spent training 8 employees, we first find the training time per employee: \n\n96 ÷ 8 = 12 hours per employee. \n\nNow we calculate for 6 employees:\n\n6 × 12 = 72 hours"
+            },
+            "answers": [
+                {
+                    "value": "60",
+                    "isCorrect": false
+                },
+                {
+                    "value": "72",
+                    "isCorrect": true
+                },
+                {
+                    "value": "84",
+                    "isCorrect": false
+                },
+                {
+                    "value": "96",
+                    "isCorrect": false
+                },
+                {
+                    "value": "108",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "question": {
+                "type": 1,
+                "description": "Which THREE of the following words have similar meanings?",
+                "explanation": "The correct answers are Gather, Collect, and Accumulate. All three words mean to bring things together."
+            },
+            "answers": [
+                {
+                    "value": "Gather",
+                    "isCorrect": true
+                },
+                {
+                    "value": "Scatter",
+                    "isCorrect": false
+                },
+                {
+                    "value": "Collect",
+                    "isCorrect": true
+                },
+                {
+                    "value": "Accumulate",
+                    "isCorrect": true
+                },
+                {
+                    "value": "Disperse",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "question": {
+                "type": 0,
+                "description": "The words \"COMPLETE\" and \"COMPLICATE\" have ______ meanings.",
+                "explanation": "Complete means finished or whole, while complicate means to make complex. Their meanings are unrelated."
+            },
+            "answers": [
+                {
+                    "value": "Unrelated",
+                    "isCorrect": true
+                },
+                {
+                    "value": "Similar",
+                    "isCorrect": false
+                },
+                {
+                    "value": "Contradictory",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "question": {
+                "type": 0,
+                "description": "Which of the following is the earliest date?",
+                "explanation": "Comparing years and months, July 9, 2151 is the earliest date listed."
+            },
+            "answers": [
+                {
+                    "value": "Mar. 18, 2152",
+                    "isCorrect": false
+                },
+                {
+                    "value": "Jan. 25, 2153",
+                    "isCorrect": false
+                },
+                {
+                    "value": "Dec. 30, 2151",
+                    "isCorrect": false
+                },
+                {
+                    "value": "Feb. 14, 2152",
+                    "isCorrect": false
+                },
+                {
+                    "value": "Jul. 9, 2151",
+                    "isCorrect": true
+                }
+            ]
+        },
+        {
+            "question": {
+                "type": 0,
+                "description": "Rearrange all of the words down below to make the best sentence. Is the sentence true or false? \n\nlargest Africa desert Sahara the in is",
+                "explanation": "The correct sentence is 'The Sahara is the largest desert in Africa', which is true."
+            },
+            "answers": [
+                {
+                    "value": "True",
+                    "isCorrect": true
+                },
+                {
+                    "value": "False",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "question": {
+                "type": 0,
+                "description": "How many of the five pairs below are exact duplicates?\n\n6721      |     6721  \n450045    |     450045  \n88997     |     88979  \n123123    |     123123  \n7008007   |     7008070",
+                "explanation": "Pairs 1, 2, and 4 are exact duplicates. Total: 3 pairs."
+            },
+            "answers": [
+                {
+                    "value": "0",
+                    "isCorrect": false
+                },
+                {
+                    "value": "1",
+                    "isCorrect": false
+                },
+                {
+                    "value": "2",
+                    "isCorrect": false
+                },
+                {
+                    "value": "3",
+                    "isCorrect": true
+                },
+                {
+                    "value": "4",
+                    "isCorrect": false
+                },
+                {
+                    "value": "5",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "question": {
+                "type": 0,
+                "description": "A clock lost 3 minutes and 15 seconds in 65 days.\n\nHow many seconds did it lose per day?",
+                "explanation": "195 seconds total divided by 65 days equals 3 seconds per day."
+            },
+            "answers": [
+                {
+                    "value": "0",
+                    "isCorrect": false
+                },
+                {
+                    "value": "1",
+                    "isCorrect": false
+                },
+                {
+                    "value": "2",
+                    "isCorrect": false
+                },
+                {
+                    "value": "3",
+                    "isCorrect": true
+                },
+                {
+                    "value": "4",
+                    "isCorrect": false
+                },
+                {
+                    "value": "5",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "question": {
+                "description": "If 4 workers can assemble 24 devices in 2 hours, how many devices can 6 workers assemble in 3 hours?",
+                "explanation": "1 worker assembles 6 devices in 2 hours = 3 devices/hour. 6 workers assemble 18 devices/hour. In 3 hours: 18 * 3 = 54 devices."
+            },
+            "answers": [
+                {
+                    "value": "36",
+                    "isCorrect": false
+                },
+                {
+                    "value": "48",
+                    "isCorrect": false
+                },
+                {
+                    "value": "54",
+                    "isCorrect": true
+                },
+                {
+                    "value": "72",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "question": {
+                "type": 1,
+                "description": "Which TWO of the following words have opposite meanings?",
+                "explanation": "Zenith means the highest point, while Nadir means the lowest point. They are direct antonyms."
+            },
+            "answers": [
+                {
+                    "value": "Zenith",
+                    "isCorrect": true
+                },
+                {
+                    "value": "Summit",
+                    "isCorrect": false
+                },
+                {
+                    "value": "Nadir",
+                    "isCorrect": true
+                },
+                {
+                    "value": "Apex",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "question": {
+                "type": 0,
+                "description": "What is the next number in the series? \n\n2, 6, 12, 20, 30, ?",
+                "explanation": "Differences are +4, +6, +8, +10. Next difference is +12, so 30 + 12 = 42."
+            },
+            "answers": [
+                {
+                    "value": "38",
+                    "isCorrect": false
+                },
+                {
+                    "value": "40",
+                    "isCorrect": false
+                },
+                {
+                    "value": "42",
+                    "isCorrect": true
+                },
+                {
+                    "value": "46",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "question": {
+                "type": 0,
+                "description": "Choose the number that is 1/4 of 1/2 of 800.",
+                "explanation": "1/2 of 800 is 400. 1/4 of 400 is 100."
+            },
+            "answers": [
+                {
+                    "value": "50",
+                    "isCorrect": false
+                },
+                {
+                    "value": "100",
+                    "isCorrect": true
+                },
+                {
+                    "value": "200",
+                    "isCorrect": false
+                },
+                {
+                    "value": "400",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "question": {
+                "type": 0,
+                "description": "A store sells a shirt for $45 after a 25% discount. What was the original price?",
+                "explanation": "Original price * 0.75 = 45 => 45 / 0.75 = 60."
+            },
+            "answers": [
+                {
+                    "value": "55",
+                    "isCorrect": false
+                },
+                {
+                    "value": "60",
+                    "isCorrect": true
+                },
+                {
+                    "value": "65",
+                    "isCorrect": false
+                },
+                {
+                    "value": "75",
+                    "isCorrect": false
+                }
+            ]
+        }
+    ]
+}

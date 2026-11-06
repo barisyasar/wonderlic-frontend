@@ -61,7 +61,7 @@ export default async function QuizGrid() {
               Free Quizzes
             </h2>
             <p className="mt-3 max-w-xl text-[15px] leading-7 text-[#65758c]">
-              Pick a quiz from the live catalog and start practicing right away.
+              Pick a quiz from the catalog and start practicing right away.
             </p>
           </div>
           <span className="inline-flex items-center gap-2 pb-1 text-xs font-medium text-[#76849a]">
@@ -76,7 +76,7 @@ export default async function QuizGrid() {
               .map((quiz) => <QuizCard key={String(quiz.quizId)} quiz={quiz} />)
           ) : (
             <div className="col-span-full rounded-xl border border-dashed border-slate-200 bg-white p-8 text-center text-sm text-slate-500">
-              Loading quizzes from the backend…
+              No quizzes are available right now.
             </div>
           )}
         </div>

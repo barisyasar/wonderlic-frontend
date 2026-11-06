@@ -1,0 +1,1253 @@
+{
+  "quizId": "db1a2c85-674f-45f7-8dff-bc68d5398a56",
+  "title": "Wonderlic Test 5 (12 mins - 50 Questions)",
+  "durationMinutes": 12,
+  "questions": [
+    {
+      "question": {
+        "type": 0,
+        "description": "What comes next? 2, 6, 12, 20, 30, ?",
+        "explanation": "The successive differences are +4, +6, +8, +10, and +12, so 30 + 12 = 42."
+      },
+      "answers": [
+        {
+          "value": "44",
+          "isCorrect": false
+        },
+        {
+          "value": "40",
+          "isCorrect": false
+        },
+        {
+          "value": "46",
+          "isCorrect": false
+        },
+        {
+          "value": "42",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "Rearrange \"triangles / sides / three / have / all\" to form a statement. Is the statement true or false?",
+        "explanation": "The statement is \"All triangles have three sides,\" which is true."
+      },
+      "answers": [
+        {
+          "value": "False",
+          "isCorrect": false
+        },
+        {
+          "value": "True",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "If tomorrow is Friday, what day will it be four days from today?",
+        "explanation": "Today is Thursday; four days later is Monday."
+      },
+      "answers": [
+        {
+          "value": "Tuesday",
+          "isCorrect": false
+        },
+        {
+          "value": "Sunday",
+          "isCorrect": false
+        },
+        {
+          "value": "Wednesday",
+          "isCorrect": false
+        },
+        {
+          "value": "Monday",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "A copier prints 110 pages in 10 minutes. How many pages will it print in 35 minutes at the same rate?",
+        "explanation": "110 ÷ 10 = 11 pages per minute; 11 × 35 = 385."
+      },
+      "answers": [
+        {
+          "value": "350",
+          "isCorrect": false
+        },
+        {
+          "value": "375",
+          "isCorrect": false
+        },
+        {
+          "value": "400",
+          "isCorrect": false
+        },
+        {
+          "value": "385",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "A rectangle has a perimeter of 74 cm and a width of 14 cm. What is its length?",
+        "explanation": "2 × (length + 14) = 74, so length = 37 − 14 = 23 cm."
+      },
+      "answers": [
+        {
+          "value": "30 cm",
+          "isCorrect": false
+        },
+        {
+          "value": "23 cm",
+          "isCorrect": true
+        },
+        {
+          "value": "20 cm",
+          "isCorrect": false
+        },
+        {
+          "value": "25 cm",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "Find the next letter: C, G, K, O, ?",
+        "explanation": "Each letter moves forward four alphabet positions: C(3), G(7), K(11), O(15), S(19)."
+      },
+      "answers": [
+        {
+          "value": "R",
+          "isCorrect": false
+        },
+        {
+          "value": "U",
+          "isCorrect": false
+        },
+        {
+          "value": "T",
+          "isCorrect": false
+        },
+        {
+          "value": "S",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "Five meters of fabric cost $27.50. What do eight meters cost at the same rate?",
+        "explanation": "One meter costs $27.50 ÷ 5 = $5.50; eight meters cost $44."
+      },
+      "answers": [
+        {
+          "value": "$40",
+          "isCorrect": false
+        },
+        {
+          "value": "$44",
+          "isCorrect": true
+        },
+        {
+          "value": "$46",
+          "isCorrect": false
+        },
+        {
+          "value": "$42",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "What is the square root of 324 minus 7?",
+        "explanation": "√324 = 18; 18 − 7 = 11."
+      },
+      "answers": [
+        {
+          "value": "11",
+          "isCorrect": true
+        },
+        {
+          "value": "15",
+          "isCorrect": false
+        },
+        {
+          "value": "13",
+          "isCorrect": false
+        },
+        {
+          "value": "9",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "Which of these decimal numbers has the highest value?",
+        "explanation": "0.97 is 0.970, greater than 0.917, 0.908, and 0.907."
+      },
+      "answers": [
+        {
+          "value": "0.908",
+          "isCorrect": false
+        },
+        {
+          "value": "0.907",
+          "isCorrect": false
+        },
+        {
+          "value": "0.97",
+          "isCorrect": true
+        },
+        {
+          "value": "0.917",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "What is 35% of 260?",
+        "explanation": "0.35 × 260 = 91."
+      },
+      "answers": [
+        {
+          "value": "91",
+          "isCorrect": true
+        },
+        {
+          "value": "95",
+          "isCorrect": false
+        },
+        {
+          "value": "104",
+          "isCorrect": false
+        },
+        {
+          "value": "81",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "A hose supplies 7 liters of water every 3 minutes. How many liters does it supply in 42 minutes?",
+        "explanation": "42 ÷ 3 = 14 intervals; 14 × 7 = 98 liters."
+      },
+      "answers": [
+        {
+          "value": "91 liters",
+          "isCorrect": false
+        },
+        {
+          "value": "98 liters",
+          "isCorrect": true
+        },
+        {
+          "value": "105 liters",
+          "isCorrect": false
+        },
+        {
+          "value": "84 liters",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 1,
+        "description": "Which THREE words are synonyms for \"INTELLIGENT\"?",
+        "explanation": "Clever, astute, and bright can all mean intelligent."
+      },
+      "answers": [
+        {
+          "value": "Foolish",
+          "isCorrect": false
+        },
+        {
+          "value": "Clumsy",
+          "isCorrect": false
+        },
+        {
+          "value": "Clever",
+          "isCorrect": true
+        },
+        {
+          "value": "Astute",
+          "isCorrect": true
+        },
+        {
+          "value": "Bright",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "Complete the sequence: 5, 15, 45, 135, ?",
+        "explanation": "Each term is multiplied by 3; 135 × 3 = 405."
+      },
+      "answers": [
+        {
+          "value": "270",
+          "isCorrect": false
+        },
+        {
+          "value": "375",
+          "isCorrect": false
+        },
+        {
+          "value": "415",
+          "isCorrect": false
+        },
+        {
+          "value": "405",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "A company has 160 employees, and 22.5% are absent today. How many employees are present?",
+        "explanation": "22.5% of 160 is 36; 160 − 36 = 124 employees present."
+      },
+      "answers": [
+        {
+          "value": "128",
+          "isCorrect": false
+        },
+        {
+          "value": "136",
+          "isCorrect": false
+        },
+        {
+          "value": "124",
+          "isCorrect": true
+        },
+        {
+          "value": "116",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "Which word is the opposite of \"SCARCE\"?",
+        "explanation": "Scarce means limited or hard to find; abundant means plentiful."
+      },
+      "answers": [
+        {
+          "value": "Abundant",
+          "isCorrect": true
+        },
+        {
+          "value": "Rare",
+          "isCorrect": false
+        },
+        {
+          "value": "Insufficient",
+          "isCorrect": false
+        },
+        {
+          "value": "Limited",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "What is 18% of 350?",
+        "explanation": "0.18 × 350 = 63."
+      },
+      "answers": [
+        {
+          "value": "68",
+          "isCorrect": false
+        },
+        {
+          "value": "53",
+          "isCorrect": false
+        },
+        {
+          "value": "72",
+          "isCorrect": false
+        },
+        {
+          "value": "63",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "In a non-leap year, how many days are in January, February, and March combined?",
+        "explanation": "January has 31 days, February 28, and March 31; 31 + 28 + 31 = 90."
+      },
+      "answers": [
+        {
+          "value": "90",
+          "isCorrect": true
+        },
+        {
+          "value": "91",
+          "isCorrect": false
+        },
+        {
+          "value": "92",
+          "isCorrect": false
+        },
+        {
+          "value": "89",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "A cyclist covers 84 kilometers in 4 hours. What is the average speed?",
+        "explanation": "84 ÷ 4 = 21 km/h."
+      },
+      "answers": [
+        {
+          "value": "28 km/h",
+          "isCorrect": false
+        },
+        {
+          "value": "21 km/h",
+          "isCorrect": true
+        },
+        {
+          "value": "24 km/h",
+          "isCorrect": false
+        },
+        {
+          "value": "18 km/h",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "Four employees pack 96 orders in 3 hours. At the same rate, how many orders will 7 employees pack in 2 hours?",
+        "explanation": "Each employee packs 96 ÷ (4 × 3) = 8 orders per hour; 7 × 2 × 8 = 112 orders."
+      },
+      "answers": [
+        {
+          "value": "128",
+          "isCorrect": false
+        },
+        {
+          "value": "84",
+          "isCorrect": false
+        },
+        {
+          "value": "96",
+          "isCorrect": false
+        },
+        {
+          "value": "112",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "What is 9/40 written as a decimal?",
+        "explanation": "9 ÷ 40 = 0.225."
+      },
+      "answers": [
+        {
+          "value": "0.275",
+          "isCorrect": false
+        },
+        {
+          "value": "0.225",
+          "isCorrect": true
+        },
+        {
+          "value": "0.250",
+          "isCorrect": false
+        },
+        {
+          "value": "0.205",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "Which shape does not belong with the others?",
+        "explanation": "A hexagon is two-dimensional; a cube, cone, and prism are three-dimensional."
+      },
+      "answers": [
+        {
+          "value": "Prism",
+          "isCorrect": false
+        },
+        {
+          "value": "Hexagon",
+          "isCorrect": true
+        },
+        {
+          "value": "Cube",
+          "isCorrect": false
+        },
+        {
+          "value": "Cone",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "Which date comes first?",
+        "explanation": "November 20, 2024 is before December 2024 and all dates in 2025."
+      },
+      "answers": [
+        {
+          "value": "Dec. 6, 2024",
+          "isCorrect": false
+        },
+        {
+          "value": "Nov. 20, 2024",
+          "isCorrect": true
+        },
+        {
+          "value": "Jan. 4, 2025",
+          "isCorrect": false
+        },
+        {
+          "value": "Feb. 7, 2025",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "Which fraction is equivalent to 5/8?",
+        "explanation": "Multiplying numerator and denominator by 4 gives 20/32."
+      },
+      "answers": [
+        {
+          "value": "20/32",
+          "isCorrect": true
+        },
+        {
+          "value": "15/20",
+          "isCorrect": false
+        },
+        {
+          "value": "25/32",
+          "isCorrect": false
+        },
+        {
+          "value": "10/18",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "If 42 is 35% of a number, what is that number?",
+        "explanation": "42 ÷ 0.35 = 120."
+      },
+      "answers": [
+        {
+          "value": "120",
+          "isCorrect": true
+        },
+        {
+          "value": "147",
+          "isCorrect": false
+        },
+        {
+          "value": "140",
+          "isCorrect": false
+        },
+        {
+          "value": "105",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "A jacket priced at $180 is discounted by 30%. What is its sale price?",
+        "explanation": "The discount is $54; $180 − $54 = $126."
+      },
+      "answers": [
+        {
+          "value": "$126",
+          "isCorrect": true
+        },
+        {
+          "value": "$144",
+          "isCorrect": false
+        },
+        {
+          "value": "$132",
+          "isCorrect": false
+        },
+        {
+          "value": "$120",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "Complete the series: 3, 8, 15, 24, 35, ?",
+        "explanation": "The differences are +5, +7, +9, +11, then +13; 35 + 13 = 48."
+      },
+      "answers": [
+        {
+          "value": "48",
+          "isCorrect": true
+        },
+        {
+          "value": "47",
+          "isCorrect": false
+        },
+        {
+          "value": "50",
+          "isCorrect": false
+        },
+        {
+          "value": "46",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "Which word is closest in meaning to \"METICULOUS\"?",
+        "explanation": "Meticulous means very careful and attentive to detail; thorough is the closest choice."
+      },
+      "answers": [
+        {
+          "value": "Vague",
+          "isCorrect": false
+        },
+        {
+          "value": "Thorough",
+          "isCorrect": true
+        },
+        {
+          "value": "Hasty",
+          "isCorrect": false
+        },
+        {
+          "value": "Careless",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "An item costs $240. Its price increases by 15%. What is the new price?",
+        "explanation": "15% of $240 is $36; $240 + $36 = $276."
+      },
+      "answers": [
+        {
+          "value": "$270",
+          "isCorrect": false
+        },
+        {
+          "value": "$288",
+          "isCorrect": false
+        },
+        {
+          "value": "$276",
+          "isCorrect": true
+        },
+        {
+          "value": "$264",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "Nine tickets cost $63. How much will 14 tickets cost at the same price per ticket?",
+        "explanation": "One ticket costs $63 ÷ 9 = $7; 14 × $7 = $98."
+      },
+      "answers": [
+        {
+          "value": "$91",
+          "isCorrect": false
+        },
+        {
+          "value": "$105",
+          "isCorrect": false
+        },
+        {
+          "value": "$98",
+          "isCorrect": true
+        },
+        {
+          "value": "$84",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "If 8x − 5 = 59, what is x?",
+        "explanation": "8x = 64, so x = 8."
+      },
+      "answers": [
+        {
+          "value": "8",
+          "isCorrect": true
+        },
+        {
+          "value": "7",
+          "isCorrect": false
+        },
+        {
+          "value": "9",
+          "isCorrect": false
+        },
+        {
+          "value": "6",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "A rectangular garden is 13 meters long and 9 meters wide. What is its area?",
+        "explanation": "Area = length × width = 13 × 9 = 117 square meters."
+      },
+      "answers": [
+        {
+          "value": "104 m²",
+          "isCorrect": false
+        },
+        {
+          "value": "44 m²",
+          "isCorrect": false
+        },
+        {
+          "value": "126 m²",
+          "isCorrect": false
+        },
+        {
+          "value": "117 m²",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "Which instrument belongs to a different family?",
+        "explanation": "Guitar is a string instrument; flute, trumpet, and oboe are wind instruments."
+      },
+      "answers": [
+        {
+          "value": "Trumpet",
+          "isCorrect": false
+        },
+        {
+          "value": "Flute",
+          "isCorrect": false
+        },
+        {
+          "value": "Guitar",
+          "isCorrect": true
+        },
+        {
+          "value": "Oboe",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "How many hours are in two weeks and three days?",
+        "explanation": "Two weeks and three days equal 17 days; 17 × 24 = 408 hours."
+      },
+      "answers": [
+        {
+          "value": "432",
+          "isCorrect": false
+        },
+        {
+          "value": "336",
+          "isCorrect": false
+        },
+        {
+          "value": "408",
+          "isCorrect": true
+        },
+        {
+          "value": "384",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "The words \"ANCIENT\" and \"MODERN\" have ______ meanings.",
+        "explanation": "Ancient refers to a very old time, while modern refers to the present or recent past; their meanings are opposite."
+      },
+      "answers": [
+        {
+          "value": "Unrelated",
+          "isCorrect": false
+        },
+        {
+          "value": "Opposite",
+          "isCorrect": true
+        },
+        {
+          "value": "Similar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "Which number is divisible by 11?",
+        "explanation": "For 572, the alternating digit sum is 5 − 7 + 2 = 0, so 572 is divisible by 11."
+      },
+      "answers": [
+        {
+          "value": "751",
+          "isCorrect": false
+        },
+        {
+          "value": "482",
+          "isCorrect": false
+        },
+        {
+          "value": "572",
+          "isCorrect": true
+        },
+        {
+          "value": "634",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "If 4y + 9 = 37, what is y?",
+        "explanation": "4y = 28, so y = 7."
+      },
+      "answers": [
+        {
+          "value": "5",
+          "isCorrect": false
+        },
+        {
+          "value": "8",
+          "isCorrect": false
+        },
+        {
+          "value": "7",
+          "isCorrect": true
+        },
+        {
+          "value": "6",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "Which of the following numbers is prime?",
+        "explanation": "43 is prime; 45 = 5 × 9, 49 = 7 × 7, and 51 = 3 × 17."
+      },
+      "answers": [
+        {
+          "value": "49",
+          "isCorrect": false
+        },
+        {
+          "value": "51",
+          "isCorrect": false
+        },
+        {
+          "value": "45",
+          "isCorrect": false
+        },
+        {
+          "value": "43",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "Which of these decimals is the smallest?",
+        "explanation": "0.058 is less than 0.085, 0.508, and 0.580."
+      },
+      "answers": [
+        {
+          "value": "0.508",
+          "isCorrect": false
+        },
+        {
+          "value": "0.085",
+          "isCorrect": false
+        },
+        {
+          "value": "0.058",
+          "isCorrect": true
+        },
+        {
+          "value": "0.58",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 1,
+        "description": "Which THREE words are closest in meaning to \"BRAVE\"?",
+        "explanation": "Courageous, fearless, and bold all describe bravery."
+      },
+      "answers": [
+        {
+          "value": "Bold",
+          "isCorrect": true
+        },
+        {
+          "value": "Anxious",
+          "isCorrect": false
+        },
+        {
+          "value": "Timid",
+          "isCorrect": false
+        },
+        {
+          "value": "Fearless",
+          "isCorrect": true
+        },
+        {
+          "value": "Courageous",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "What is 4 cubed minus 3 squared?",
+        "explanation": "4³ = 64 and 3² = 9; 64 − 9 = 55."
+      },
+      "answers": [
+        {
+          "value": "55",
+          "isCorrect": true
+        },
+        {
+          "value": "57",
+          "isCorrect": false
+        },
+        {
+          "value": "49",
+          "isCorrect": false
+        },
+        {
+          "value": "73",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "Multiply 18 by 7, then divide the result by 3. What do you get?",
+        "explanation": "18 × 7 ÷ 3 = 126 ÷ 3 = 42."
+      },
+      "answers": [
+        {
+          "value": "42",
+          "isCorrect": true
+        },
+        {
+          "value": "48",
+          "isCorrect": false
+        },
+        {
+          "value": "36",
+          "isCorrect": false
+        },
+        {
+          "value": "54",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "What number completes the pattern? 256, 64, 16, 4, ?",
+        "explanation": "Each term is divided by 4; 4 ÷ 4 = 1."
+      },
+      "answers": [
+        {
+          "value": "3",
+          "isCorrect": false
+        },
+        {
+          "value": "0",
+          "isCorrect": false
+        },
+        {
+          "value": "1",
+          "isCorrect": true
+        },
+        {
+          "value": "2",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "Six technicians repair 36 devices in 3 hours. At the same rate, how many devices can 4 technicians repair in 5 hours?",
+        "explanation": "36 ÷ (6 × 3) = 2 devices per technician-hour; 4 × 5 × 2 = 40."
+      },
+      "answers": [
+        {
+          "value": "30",
+          "isCorrect": false
+        },
+        {
+          "value": "48",
+          "isCorrect": false
+        },
+        {
+          "value": "45",
+          "isCorrect": false
+        },
+        {
+          "value": "40",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "A train travels 315 kilometers at a steady 70 km/h. How long does the trip take?",
+        "explanation": "315 ÷ 70 = 4.5 hours."
+      },
+      "answers": [
+        {
+          "value": "4 hours",
+          "isCorrect": false
+        },
+        {
+          "value": "5 hours",
+          "isCorrect": false
+        },
+        {
+          "value": "5.5 hours",
+          "isCorrect": false
+        },
+        {
+          "value": "4.5 hours",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "How many minutes are there in 3 hours and 20 minutes?",
+        "explanation": "3 × 60 + 20 = 200 minutes."
+      },
+      "answers": [
+        {
+          "value": "200",
+          "isCorrect": true
+        },
+        {
+          "value": "180",
+          "isCorrect": false
+        },
+        {
+          "value": "220",
+          "isCorrect": false
+        },
+        {
+          "value": "190",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "How many of these four pairs are exact matches?\n\n739482 | 739482\n148506 | 148560\n925174 | 925174\n603218 | 603281",
+        "explanation": "Only the first and third pairs match exactly, giving 2 matches."
+      },
+      "answers": [
+        {
+          "value": "3",
+          "isCorrect": false
+        },
+        {
+          "value": "2",
+          "isCorrect": true
+        },
+        {
+          "value": "4",
+          "isCorrect": false
+        },
+        {
+          "value": "1",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "What is the mean of 11, 15, 22, and 28?",
+        "explanation": "The sum is 76; 76 ÷ 4 = 19."
+      },
+      "answers": [
+        {
+          "value": "21",
+          "isCorrect": false
+        },
+        {
+          "value": "20",
+          "isCorrect": false
+        },
+        {
+          "value": "19",
+          "isCorrect": true
+        },
+        {
+          "value": "18",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 1,
+        "description": "Which TWO words have opposite meanings?",
+        "explanation": "Expand means to grow larger, while shrink means to become smaller."
+      },
+      "answers": [
+        {
+          "value": "Repeat",
+          "isCorrect": false
+        },
+        {
+          "value": "Shrink",
+          "isCorrect": true
+        },
+        {
+          "value": "Expand",
+          "isCorrect": true
+        },
+        {
+          "value": "Maintain",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "What is the product of 7, 4, and 6?",
+        "explanation": "7 × 4 × 6 = 168."
+      },
+      "answers": [
+        {
+          "value": "154",
+          "isCorrect": false
+        },
+        {
+          "value": "168",
+          "isCorrect": true
+        },
+        {
+          "value": "144",
+          "isCorrect": false
+        },
+        {
+          "value": "182",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "Eight identical cartons weigh 12 kilograms in total. How much do 14 cartons weigh?",
+        "explanation": "Each carton weighs 12 ÷ 8 = 1.5 kg; 14 × 1.5 = 21 kg."
+      },
+      "answers": [
+        {
+          "value": "24 kg",
+          "isCorrect": false
+        },
+        {
+          "value": "21 kg",
+          "isCorrect": true
+        },
+        {
+          "value": "18 kg",
+          "isCorrect": false
+        },
+        {
+          "value": "19.5 kg",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

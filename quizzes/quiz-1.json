@@ -1,0 +1,1248 @@
+{
+  "quizId": "36fb0c69-5c66-4f9d-9759-e7bb94e704fe",
+  "title": "Wonderlic Test 1 (12 mins - 50 Questions)",
+  "durationMinutes": 12,
+  "questions": [
+    {
+      "question": {
+        "description": "A project requires 120 hours of work completed by 5 technicians. At this rate, how many hours would it take for 8 technicians?",
+        "explanation": "120 / 5 = 24 hours per technician load. For 8 technicians sharing the same total workload: 120 / 8 = 15 hours. Wait, if it's total workload: 120 * 5 / 8 = 75 hours."
+      },
+      "answers": [
+        {
+          "value": "60",
+          "isCorrect": false
+        },
+        {
+          "value": "75",
+          "isCorrect": true
+        },
+        {
+          "value": "90",
+          "isCorrect": false
+        },
+        {
+          "value": "96",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 1,
+        "description": "Which THREE of the following words have similar meanings?",
+        "explanation": "Rapid, Swift, and Quick all describe high speed."
+      },
+      "answers": [
+        {
+          "value": "Rapid",
+          "isCorrect": true
+        },
+        {
+          "value": "Slow",
+          "isCorrect": false
+        },
+        {
+          "value": "Swift",
+          "isCorrect": true
+        },
+        {
+          "value": "Quick",
+          "isCorrect": true
+        },
+        {
+          "value": "Sluggish",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "The words \"EXPAND\" and \"ENLARGE\" have ______ meanings.",
+        "explanation": "Both words mean to make something larger in size or scope."
+      },
+      "answers": [
+        {
+          "value": "Similar",
+          "isCorrect": true
+        },
+        {
+          "value": "Contradictory",
+          "isCorrect": false
+        },
+        {
+          "value": "Unrelated",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "Which of the following is the earliest date?",
+        "explanation": "Comparing the dates, Nov. 12, 2010 precedes the others."
+      },
+      "answers": [
+        {
+          "value": "Dec. 05, 2012",
+          "isCorrect": false
+        },
+        {
+          "value": "Nov. 12, 2010",
+          "isCorrect": true
+        },
+        {
+          "value": "Jan. 01, 2011",
+          "isCorrect": false
+        },
+        {
+          "value": "Feb. 28, 2011",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "Rearrange all words to form a sentence. Is it true or false?\n\ncapital France Paris of the is",
+        "explanation": "'Paris is the capital of France' is true."
+      },
+      "answers": [
+        {
+          "value": "True",
+          "isCorrect": true
+        },
+        {
+          "value": "False",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "How many of the four pairs below are exact duplicates?\n\n987654 | 987654\n112233 | 112323\n554433 | 554433\n778899 | 778899",
+        "explanation": "Pairs 1, 3, and 4 are identical. Total: 3 pairs."
+      },
+      "answers": [
+        {
+          "value": "1",
+          "isCorrect": false
+        },
+        {
+          "value": "2",
+          "isCorrect": false
+        },
+        {
+          "value": "3",
+          "isCorrect": true
+        },
+        {
+          "value": "4",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "What is the next number in the series? 5, 10, 20, 40, ?",
+        "explanation": "Each number is multiplied by 2. 40 * 2 = 80."
+      },
+      "answers": [
+        {
+          "value": "60",
+          "isCorrect": false
+        },
+        {
+          "value": "70",
+          "isCorrect": false
+        },
+        {
+          "value": "80",
+          "isCorrect": true
+        },
+        {
+          "value": "100",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "If 3 widgets cost $12, how much do 10 widgets cost?",
+        "explanation": "1 widget costs $4. 10 * 4 = $40."
+      },
+      "answers": [
+        {
+          "value": "30",
+          "isCorrect": false
+        },
+        {
+          "value": "35",
+          "isCorrect": false
+        },
+        {
+          "value": "40",
+          "isCorrect": true
+        },
+        {
+          "value": "50",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "Which number is the smallest?",
+        "explanation": "0.125 is 1/8, which is smaller than 0.2, 0.25, and 0.5."
+      },
+      "answers": [
+        {
+          "value": "0.2",
+          "isCorrect": false
+        },
+        {
+          "value": "0.125",
+          "isCorrect": true
+        },
+        {
+          "value": "0.25",
+          "isCorrect": false
+        },
+        {
+          "value": "0.5",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "In a group of 80 people, 25% speak French. How many people do not speak French?",
+        "explanation": "75% do not speak French. 0.75 * 80 = 60."
+      },
+      "answers": [
+        {
+          "value": "20",
+          "isCorrect": false
+        },
+        {
+          "value": "40",
+          "isCorrect": false
+        },
+        {
+          "value": "60",
+          "isCorrect": true
+        },
+        {
+          "value": "65",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "If a car travels 60 miles in 45 minutes, what is its speed in miles per hour?",
+        "explanation": "45 mins = 0.75 hours. 60 / 0.75 = 80 mph."
+      },
+      "answers": [
+        {
+          "value": "70",
+          "isCorrect": false
+        },
+        {
+          "value": "75",
+          "isCorrect": false
+        },
+        {
+          "value": "80",
+          "isCorrect": true
+        },
+        {
+          "value": "90",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "What is 15% of 240?",
+        "explanation": "0.15 * 240 = 36."
+      },
+      "answers": [
+        {
+          "value": "24",
+          "isCorrect": false
+        },
+        {
+          "value": "30",
+          "isCorrect": false
+        },
+        {
+          "value": "36",
+          "isCorrect": true
+        },
+        {
+          "value": "42",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 1,
+        "description": "Which TWO words are antonyms?",
+        "explanation": "Benevolent means kind; Malevolent means wishing harm."
+      },
+      "answers": [
+        {
+          "value": "Benevolent",
+          "isCorrect": true
+        },
+        {
+          "value": "Kind",
+          "isCorrect": false
+        },
+        {
+          "value": "Malevolent",
+          "isCorrect": true
+        },
+        {
+          "value": "Friendly",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "Find the missing number: 3, 9, 27, 81, ?",
+        "explanation": "Each number is multiplied by 3. 81 * 3 = 243."
+      },
+      "answers": [
+        {
+          "value": "162",
+          "isCorrect": false
+        },
+        {
+          "value": "243",
+          "isCorrect": true
+        },
+        {
+          "value": "250",
+          "isCorrect": false
+        },
+        {
+          "value": "324",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "If two boxes weigh 14 kg total, how much do 7 boxes weigh at the same rate?",
+        "explanation": "1 box = 7 kg. 7 boxes = 49 kg."
+      },
+      "answers": [
+        {
+          "value": "35",
+          "isCorrect": false
+        },
+        {
+          "value": "42",
+          "isCorrect": false
+        },
+        {
+          "value": "49",
+          "isCorrect": true
+        },
+        {
+          "value": "56",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "A book has 320 pages. John reads 40 pages per day. How many days to finish?",
+        "explanation": "320 / 40 = 8 days."
+      },
+      "answers": [
+        {
+          "value": "6",
+          "isCorrect": false
+        },
+        {
+          "value": "7",
+          "isCorrect": false
+        },
+        {
+          "value": "8",
+          "isCorrect": true
+        },
+        {
+          "value": "10",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "Which fraction is equivalent to 3/5?",
+        "explanation": "Multiplying numerator and denominator by 12 gives 36/60."
+      },
+      "answers": [
+        {
+          "value": "6/15",
+          "isCorrect": false
+        },
+        {
+          "value": "12/25",
+          "isCorrect": false
+        },
+        {
+          "value": "36/60",
+          "isCorrect": true
+        },
+        {
+          "value": "15/30",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "What is the square root of 144 plus 5?",
+        "explanation": "sqrt(144) = 12. 12 + 5 = 17."
+      },
+      "answers": [
+        {
+          "value": "15",
+          "isCorrect": false
+        },
+        {
+          "value": "17",
+          "isCorrect": true
+        },
+        {
+          "value": "19",
+          "isCorrect": false
+        },
+        {
+          "value": "21",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "If a shirt costs $20 and is on sale for 20% off, what is the sale price?",
+        "explanation": "20 * 0.80 = $16."
+      },
+      "answers": [
+        {
+          "value": "14",
+          "isCorrect": false
+        },
+        {
+          "value": "15",
+          "isCorrect": false
+        },
+        {
+          "value": "16",
+          "isCorrect": true
+        },
+        {
+          "value": "18",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "Complete the sequence: 100, 95, 85, 70, 50, ?",
+        "explanation": "Differences are -5, -10, -15, -20. Next difference is -25, so 50 - 25 = 25."
+      },
+      "answers": [
+        {
+          "value": "20",
+          "isCorrect": false
+        },
+        {
+          "value": "25",
+          "isCorrect": true
+        },
+        {
+          "value": "30",
+          "isCorrect": false
+        },
+        {
+          "value": "35",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "How many months in a year have 31 days?",
+        "explanation": "January, March, May, July, August, October, December = 7 months."
+      },
+      "answers": [
+        {
+          "value": "5",
+          "isCorrect": false
+        },
+        {
+          "value": "6",
+          "isCorrect": false
+        },
+        {
+          "value": "7",
+          "isCorrect": true
+        },
+        {
+          "value": "8",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "If 7x = 56, what is x + 5?",
+        "explanation": "x = 8. 8 + 5 = 13."
+      },
+      "answers": [
+        {
+          "value": "11",
+          "isCorrect": false
+        },
+        {
+          "value": "12",
+          "isCorrect": false
+        },
+        {
+          "value": "13",
+          "isCorrect": true
+        },
+        {
+          "value": "15",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "Choose the word that does not belong with the others.",
+        "explanation": "Apple is a fruit, while the others are vegetables."
+      },
+      "answers": [
+        {
+          "value": "Carrot",
+          "isCorrect": false
+        },
+        {
+          "value": "Potato",
+          "isCorrect": false
+        },
+        {
+          "value": "Apple",
+          "isCorrect": true
+        },
+        {
+          "value": "Broccoli",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "What is 3 cubed minus 4 squared?",
+        "explanation": "3^3 = 27. 4^2 = 16. 27 - 16 = 11."
+      },
+      "answers": [
+        {
+          "value": "9",
+          "isCorrect": false
+        },
+        {
+          "value": "11",
+          "isCorrect": true
+        },
+        {
+          "value": "13",
+          "isCorrect": false
+        },
+        {
+          "value": "15",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "If yesterday was Wednesday, what day is the day after tomorrow?",
+        "explanation": "Yesterday = Wednesday => Today = Thursday => Tomorrow = Friday => Day after tomorrow = Saturday."
+      },
+      "answers": [
+        {
+          "value": "Friday",
+          "isCorrect": false
+        },
+        {
+          "value": "Saturday",
+          "isCorrect": true
+        },
+        {
+          "value": "Sunday",
+          "isCorrect": false
+        },
+        {
+          "value": "Monday",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "A room is 12 feet long and 10 feet wide. What is the area in square feet?",
+        "explanation": "12 * 10 = 120."
+      },
+      "answers": [
+        {
+          "value": "100",
+          "isCorrect": false
+        },
+        {
+          "value": "110",
+          "isCorrect": false
+        },
+        {
+          "value": "120",
+          "isCorrect": true
+        },
+        {
+          "value": "144",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "Which number is a prime number?",
+        "explanation": "37 is only divisible by 1 and itself."
+      },
+      "answers": [
+        {
+          "value": "33",
+          "isCorrect": false
+        },
+        {
+          "value": "35",
+          "isCorrect": false
+        },
+        {
+          "value": "37",
+          "isCorrect": true
+        },
+        {
+          "value": "39",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "If 5 workers build a wall in 6 days, how many days for 10 workers?",
+        "explanation": "Inverse proportion: (5 * 6) / 10 = 3 days."
+      },
+      "answers": [
+        {
+          "value": "2",
+          "isCorrect": false
+        },
+        {
+          "value": "3",
+          "isCorrect": true
+        },
+        {
+          "value": "4",
+          "isCorrect": false
+        },
+        {
+          "value": "12",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "What is the average of 12, 18, 24, and 30?",
+        "explanation": "Sum = 84. 84 / 4 = 21."
+      },
+      "answers": [
+        {
+          "value": "19",
+          "isCorrect": false
+        },
+        {
+          "value": "20",
+          "isCorrect": false
+        },
+        {
+          "value": "21",
+          "isCorrect": true
+        },
+        {
+          "value": "22",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "If 2.5 pounds of apples cost $5.00, how much do 4 pounds cost?",
+        "explanation": "Price per pound = $2.00. 4 * 2 = $8.00."
+      },
+      "answers": [
+        {
+          "value": "6.50",
+          "isCorrect": false
+        },
+        {
+          "value": "7.00",
+          "isCorrect": false
+        },
+        {
+          "value": "8.00",
+          "isCorrect": true
+        },
+        {
+          "value": "10.00",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "Which word means the opposite of 'Abundant'?",
+        "explanation": "Scarce means in short supply, opposite of abundant."
+      },
+      "answers": [
+        {
+          "value": "Plentiful",
+          "isCorrect": false
+        },
+        {
+          "value": "Scarce",
+          "isCorrect": true
+        },
+        {
+          "value": "Ample",
+          "isCorrect": false
+        },
+        {
+          "value": "Generous",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "What is 40% of 80?",
+        "explanation": "0.40 * 80 = 32."
+      },
+      "answers": [
+        {
+          "value": "28",
+          "isCorrect": false
+        },
+        {
+          "value": "30",
+          "isCorrect": false
+        },
+        {
+          "value": "32",
+          "isCorrect": true
+        },
+        {
+          "value": "36",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "Find the missing letter in the series: A, C, F, J, O, ?",
+        "explanation": "Differences are +2, +3, +4, +5. Next is +6, so O + 6 = U."
+      },
+      "answers": [
+        {
+          "value": "Q",
+          "isCorrect": false
+        },
+        {
+          "value": "S",
+          "isCorrect": false
+        },
+        {
+          "value": "U",
+          "isCorrect": true
+        },
+        {
+          "value": "V",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "If a train runs at 50 mph, how long to cover 200 miles?",
+        "explanation": "200 / 50 = 4 hours."
+      },
+      "answers": [
+        {
+          "value": "3",
+          "isCorrect": false
+        },
+        {
+          "value": "4",
+          "isCorrect": true
+        },
+        {
+          "value": "5",
+          "isCorrect": false
+        },
+        {
+          "value": "6",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "What is the next number: 1, 4, 9, 16, 25, ?",
+        "explanation": "Square numbers: 6^2 = 36."
+      },
+      "answers": [
+        {
+          "value": "30",
+          "isCorrect": false
+        },
+        {
+          "value": "32",
+          "isCorrect": false
+        },
+        {
+          "value": "36",
+          "isCorrect": true
+        },
+        {
+          "value": "49",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "Which of these numbers is divisible by 9?",
+        "explanation": "Sum of digits of 549 is 5 + 4 + 9 = 18, which is divisible by 9."
+      },
+      "answers": [
+        {
+          "value": "549",
+          "isCorrect": true
+        },
+        {
+          "value": "524",
+          "isCorrect": false
+        },
+        {
+          "value": "613",
+          "isCorrect": false
+        },
+        {
+          "value": "715",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "If a rectangle has perimeter 40 and length 12, what is its width?",
+        "explanation": "2*(12 + w) = 40 => 12 + w = 20 => w = 8."
+      },
+      "answers": [
+        {
+          "value": "6",
+          "isCorrect": false
+        },
+        {
+          "value": "8",
+          "isCorrect": true
+        },
+        {
+          "value": "10",
+          "isCorrect": false
+        },
+        {
+          "value": "14",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "How many days are there in 4 standard weeks?",
+        "explanation": "4 * 7 = 28."
+      },
+      "answers": [
+        {
+          "value": "24",
+          "isCorrect": false
+        },
+        {
+          "value": "28",
+          "isCorrect": true
+        },
+        {
+          "value": "30",
+          "isCorrect": false
+        },
+        {
+          "value": "32",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "What is 3/8 expressed as a decimal?",
+        "explanation": "3 / 8 = 0.375."
+      },
+      "answers": [
+        {
+          "value": "0.325",
+          "isCorrect": false
+        },
+        {
+          "value": "0.350",
+          "isCorrect": false
+        },
+        {
+          "value": "0.375",
+          "isCorrect": true
+        },
+        {
+          "value": "0.400",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "Which word is synonymous with 'Mend'?",
+        "explanation": "Mend and Repair mean to fix something."
+      },
+      "answers": [
+        {
+          "value": "Break",
+          "isCorrect": false
+        },
+        {
+          "value": "Repair",
+          "isCorrect": true
+        },
+        {
+          "value": "Destroy",
+          "isCorrect": false
+        },
+        {
+          "value": "Weaken",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "If 12 is 25% of a number, what is the number?",
+        "explanation": "12 / 0.25 = 48."
+      },
+      "answers": [
+        {
+          "value": "36",
+          "isCorrect": false
+        },
+        {
+          "value": "42",
+          "isCorrect": false
+        },
+        {
+          "value": "48",
+          "isCorrect": true
+        },
+        {
+          "value": "54",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "What is 7 multiplied by 8 divided by 2?",
+        "explanation": "7 * 8 = 56. 56 / 2 = 28."
+      },
+      "answers": [
+        {
+          "value": "24",
+          "isCorrect": false
+        },
+        {
+          "value": "28",
+          "isCorrect": true
+        },
+        {
+          "value": "32",
+          "isCorrect": false
+        },
+        {
+          "value": "56",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "Which of the following numbers is greatest?",
+        "explanation": "0.85 is greater than 0.8, 0.085, and 0.805."
+      },
+      "answers": [
+        {
+          "value": "0.8",
+          "isCorrect": false
+        },
+        {
+          "value": "0.85",
+          "isCorrect": true
+        },
+        {
+          "value": "0.085",
+          "isCorrect": false
+        },
+        {
+          "value": "0.805",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "A pipe leaks 2 gallons per hour. How many gallons in 3 days?",
+        "explanation": "3 days = 72 hours. 72 * 2 = 144 gallons."
+      },
+      "answers": [
+        {
+          "value": "48",
+          "isCorrect": false
+        },
+        {
+          "value": "72",
+          "isCorrect": false
+        },
+        {
+          "value": "144",
+          "isCorrect": true
+        },
+        {
+          "value": "160",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "What is 50 increased by 20%?",
+        "explanation": "50 + (0.20 * 50) = 50 + 10 = 60."
+      },
+      "answers": [
+        {
+          "value": "55",
+          "isCorrect": false
+        },
+        {
+          "value": "60",
+          "isCorrect": true
+        },
+        {
+          "value": "65",
+          "isCorrect": false
+        },
+        {
+          "value": "70",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "Choose the odd one out:",
+        "explanation": "Dog, Cat, and Horse are mammals/quadrupeds; Sparrow is a bird."
+      },
+      "answers": [
+        {
+          "value": "Dog",
+          "isCorrect": false
+        },
+        {
+          "value": "Cat",
+          "isCorrect": false
+        },
+        {
+          "value": "Sparrow",
+          "isCorrect": true
+        },
+        {
+          "value": "Horse",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "If x - 4 = 15, what is x?",
+        "explanation": "x = 15 + 4 = 19."
+      },
+      "answers": [
+        {
+          "value": "11",
+          "isCorrect": false
+        },
+        {
+          "value": "15",
+          "isCorrect": false
+        },
+        {
+          "value": "19",
+          "isCorrect": true
+        },
+        {
+          "value": "21",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "What is the product of 11, 2, and 3?",
+        "explanation": "11 * 2 = 22. 22 * 3 = 66."
+      },
+      "answers": [
+        {
+          "value": "44",
+          "isCorrect": false
+        },
+        {
+          "value": "55",
+          "isCorrect": false
+        },
+        {
+          "value": "66",
+          "isCorrect": true
+        },
+        {
+          "value": "77",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "How many seconds are in 3 minutes and 20 seconds?",
+        "explanation": "(3 * 60) + 20 = 180 + 20 = 200 seconds."
+      },
+      "answers": [
+        {
+          "value": "180",
+          "isCorrect": false
+        },
+        {
+          "value": "200",
+          "isCorrect": true
+        },
+        {
+          "value": "220",
+          "isCorrect": false
+        },
+        {
+          "value": "240",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": {
+        "type": 0,
+        "description": "If a book costs $24, how much do 5 books cost?",
+        "explanation": "24 * 5 = 120."
+      },
+      "answers": [
+        {
+          "value": "100",
+          "isCorrect": false
+        },
+        {
+          "value": "110",
+          "isCorrect": false
+        },
+        {
+          "value": "120",
+          "isCorrect": true
+        },
+        {
+          "value": "130",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

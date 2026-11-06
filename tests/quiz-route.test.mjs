@@ -5,9 +5,9 @@ import { beforeEach, describe, expect, it, vi } from 'vitest';
 
 const rootDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const routePath = path.join(rootDir, 'app', 'quizzes', '[slug]', 'page.tsx');
-const seedPath = path.join(rootDir, 'seed.json');
+const quizDataPath = path.join(rootDir, 'quizzes', 'quiz-0.json');
 
-describe('quiz route and seed data', () => {
+describe('quiz route and local quiz data', () => {
   beforeEach(() => {
     vi.restoreAllMocks();
   });
@@ -16,89 +16,30 @@ describe('quiz route and seed data', () => {
     expect(() => accessSync(routePath)).not.toThrow();
   });
 
-  it('should include a demo quiz with single and multi-select questions', () => {
-    const seed = JSON.parse(readFileSync(seedPath, 'utf8'));
+  it('should include a local demo quiz with single and multi-select questions', () => {
+    const quiz = JSON.parse(readFileSync(quizDataPath, 'utf8'));
 
-    expect(Array.isArray(seed)).toBe(true);
-    expect(seed[0]?.title).toBe('Demo');
+    expect(quiz.title).toBe('Demo Quiz (5 mins - 12 Questions)');
 
-    const questionTypes = seed[0]?.questions?.map((item) => item.question?.type ?? 0);
+    const questionTypes = quiz.questions?.map((item) => item.question?.type ?? 0);
     expect(questionTypes).toContain(0);
     expect(questionTypes).toContain(1);
   });
 
-  it('should fetch quizzes from the configured backend API', async () => {
-    const fetchMock = vi.fn(async (input) => {
-      const url = String(input);
-
-      if (url.endsWith('/api/quizzes')) {
-        return {
-          ok: true,
-          json: async () => [
-            {
-              quizId: 'quiz-123',
-              title: 'Backend Quiz',
-              duration: 180,
-              questions: [
-                {
-                  question: { description: 'What is 2 + 2?', explanation: 'It is 4.' },
-                  answers: [
-                    { value: '3', isCorrect: false },
-                    { value: '4', isCorrect: true },
-                  ],
-                },
-              ],
-            },
-          ],
-        };
-      }
-
-      return { ok: true, json: async () => ({ quizId: 'quiz-123', title: 'Backend Quiz', duration: 180, questions: [] }) };
-    });
-
-    vi.stubGlobal('fetch', fetchMock);
-
+  it('should read quiz lists and details from local files without calling the backend', async () => {
+    const fetchSpy = vi.spyOn(globalThis, 'fetch');
     const { fetchQuizList, fetchQuizBySlug } = await import('../lib/quiz-api.ts');
 
     const quizzes = await fetchQuizList();
-    const singleQuiz = await fetchQuizBySlug('backend-quiz');
+    const demoQuiz = await fetchQuizBySlug('f4362406-7cc1-4da5-b16c-68bacfc8d45f');
 
-    expect(fetchMock).toHaveBeenCalledWith('http://localhost:5104/api/quizzes', expect.objectContaining({ next: { revalidate: 60 } }));
-    expect(quizzes[0]?.title).toBe('Backend Quiz');
-    expect(singleQuiz?.quizId).toBe('quiz-123');
-  });
-
-  it('should normalize the real backend payload shape with questionId and answerId fields', async () => {
-    const fetchMock = vi.fn(async () => ({
-      ok: true,
-      json: async () => ({
-        quizId: '4187f8eb-1085-4032-9a45-1e238c62de9e',
-        title: 'Quiz 1',
-        duration: 720,
-        questions: [
-          {
-            questionId: '5192053d-a28b-4b20-aee3-683b831f4109',
-            description: 'A total of **96 hours** was spent training **8 new employees**.',
-            explanation: '96 ÷ 8 = 12 hours per employee.',
-            questionType: 0,
-            answers: [
-              { answerId: '1', description: '108', isCorrect: false },
-              { answerId: '2', description: '72', isCorrect: true },
-            ],
-          },
-        ],
-      }),
-    }));
-
-    vi.stubGlobal('fetch', fetchMock);
-
-    const { fetchQuizBySlug } = await import('../lib/quiz-api.ts');
-    const quiz = await fetchQuizBySlug('4187f8eb-1085-4032-9a45-1e238c62de9e');
-
-    expect(quiz?.quizId).toBe('4187f8eb-1085-4032-9a45-1e238c62de9e');
-    expect(quiz?.questions[0]?.question.description).toContain('96 hours');
-    expect(quiz?.questions[0]?.answers[1]?.value).toBe('72');
-    expect(quiz?.questions[0]?.answers[1]?.isCorrect).toBe(true);
+    expect(quizzes).toHaveLength(6);
+    expect(quizzes[0]?.title).toBe('Demo Quiz (5 mins - 12 Questions)');
+    expect(quizzes[0]?.duration).toBe(300);
+    expect(quizzes[0]?.questionLength).toBe(12);
+    expect(quizzes[0]?.questions[0]?.question.description).toContain('96 hours');
+    expect(demoQuiz?.quizId).toBe('f4362406-7cc1-4da5-b16c-68bacfc8d45f');
+    expect(fetchSpy).not.toHaveBeenCalled();
   });
 
   it('should expose a quit action while the quiz is in progress', () => {
